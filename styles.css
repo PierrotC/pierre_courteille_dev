@@ -1,0 +1,113 @@
+body {
+    height: 100%;
+    text-align: center;
+    font-family: 'Recursive', sans-serif;
+    color: #9C7300;
+    margin: auto;
+}
+
+a:visited {
+    color: #9C7300;
+}
+
+a {
+    color: #9C7300;
+    text-decoration: none;
+}
+
+p {
+    margin: auto;
+    font-size: 27px;
+}
+
+/* ################ index ################ */
+
+/* ################ header ################ */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+header p {
+    flex-basis: 100%;
+}
+
+#mugshot {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: solid 3px #9C7300;
+    margin: 10px;
+}
+
+h1, h2 {
+    font-size: 35px;
+    flex-basis: 30%;
+}
+
+.logo {
+    width: 20px;
+}
+
+/* ################ fin header ################ */
+
+/* ################ nav ################ */
+
+.nav_card {
+    max-width: 350px;
+    min-width: 175px;
+    min-height: 175px;
+    border: solid 2px #9C7300;
+    margin: 10px 10px;
+    background: #FFDC60;
+    border-radius: 50px;
+    flex-basis: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .fas {
+    flex-basis: 100%;
+    display: block;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    flex-wrap: wrap;
+}
+
+.on_hover {
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    transition: opacity 1s ease;
+    font-size: 15px;
+    width: 18%;
+}
+
+.nav_card:hover p:first-child{
+    opacity: 0;
+}
+
+.nav_card:hover .on_hover {
+    opacity: 1;
+}
+
+/* ################ fin nav ################ */
+
+/* ################ fin index ################ */
+
+/* Palette 
+Principale : C69200
+Secondaire (sombre) : 9C7300
+Tertiaire (claire) : FFBC00
+Complémentaire : 040B89
+Complémentaire sombre : 02076C */
