@@ -30,6 +30,8 @@ header {
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
 }
 
 header p {
@@ -51,6 +53,31 @@ h1, h2 {
 
 .logo {
     width: 20px;
+}
+
+#banner {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: -5%;
+    width: 110%;
+    height: 250px;
+    z-index: 1;
+}
+
+.banner_part_up {
+    border-top: solid 50px #FFDC60;  
+    height: 250px;
+    border-radius: 50%;
+    flex-basis: 35%;
+}
+
+.banner_part_down {
+    border-bottom: solid 15px #FFDC60;
+    height: 250px;
+    border-radius: 50%;
+    flex-basis: 35%;
+
 }
 
 /* ################ fin header ################ */
