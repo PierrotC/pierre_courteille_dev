@@ -4,6 +4,7 @@ body {
     font-family: 'Recursive', sans-serif;
     color: #9C7300;
     margin: auto;
+    overflow-x: hidden;
 }
 
 a:visited {
