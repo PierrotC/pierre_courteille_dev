@@ -133,9 +133,164 @@ nav {
 
 /* ################ fin index ################ */
 
+/* ################ global pages ################ */
+
+header.pages {
+    flex-direction: column;
+    font-size: 15px;
+}
+
+body.pages {
+    height: auto;
+}
+
+nav.pages {
+    position: fixed;
+    right: 10px;
+    display: flex;
+    text-align: right;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article div {
+    width: 85%;
+    background: #FFDC60;
+    border: solid 2px #9C7300;
+    text-align: center;
+    border-radius: 50px;
+    margin: 10px 0;
+    padding: 15px;
+}
+
+article div p {
+    font-size: 20px;
+}
+
+nav.pages p {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+nav.pages:hover p {
+    opacity: 1;
+}
+
+/* ################ fin global pages ################ */
+
+/* ################ CV ################ */
+
+body.CV {
+    width: 21cm;
+    height: 29.7cm;
+    display: flex;
+    margin: 0;
+    border: solid 1px #9C7300;
+}
+
+body.CV #mugshot {
+    width: 200px;
+    height: 200px;
+}
+
+body.CV p, body.CV ul {
+    font-size: 16px;
+    text-align: justify;
+}
+
+body.CV h2 {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+body.CV h1 {
+    font-size: 30px;
+}
+
+body.CV h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+main.CV a {
+    text-decoration: underline;
+}
+
+main.CV h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+main.CV h3 {
+    font-size: 18px;
+}
+
+aside.CV {
+    flex-basis: 40%;
+    background: #FFDC60;
+    padding: 0 15px;
+}
+
+main.CV {
+    padding: 0 15px;
+    flex-basis: 60%;
+    text-align: left;
+}
+
+#download_CV {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 25px;
+    background: #FFDC60;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: width 1s ease, border-radius 1s ease;
+    text-decoration: none;
+}
+
+#download_CV:hover > i{
+    opacity: 0;
+}
+
+#dowload_CV > i {
+    transition: opacity 1s ease;
+}
+
+#download_CV:hover {
+    width: 220px;
+    border-radius: 15px;
+}
+
+#download_CV:hover .on_hover {
+    opacity: 1;
+}
+
+#download_CV .on_hover {
+    width: 220px;
+    padding-left: 5px;
+}
+
+.empty_circle {
+    color: white;
+}
+
+/* ################ fin CV ################ */
+
 /* Palette 
-Principale : C69200
+Principale : #9C7300
+
+Tertiaire (claire) : #FFDC60
+
 Secondaire (sombre) : 9C7300
-Tertiaire (claire) : FFBC00
 Complémentaire : 040B89
 Complémentaire sombre : 02076C */
