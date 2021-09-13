@@ -149,6 +149,7 @@ nav.pages {
     right: 10px;
     display: flex;
     text-align: right;
+    font-size: 25px;
 }
 
 article {
@@ -285,6 +286,46 @@ main.CV {
 }
 
 /* ################ fin CV ################ */
+
+/* ################ News ################ */
+
+main.news p {
+    background: #FFDC60;
+    border: solid 1px #9C7300;
+    text-align: left;
+    border-radius: 50px;
+    margin: 10px 0;
+    padding: 15px;
+    display: block;
+    width: max-content;
+    font-size: 1em;
+}
+
+main.news h2 {
+    font-size: 1.6em;
+    border-bottom: solid 2px #FFDC60;
+}
+
+main.news h3 {
+    font-size: 1.4em;
+    border-bottom: solid 1px lightgray;
+}
+
+main.news h4 {
+    font-size: 1.2em;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+main.news {
+    margin: 10px;
+}
+
+main.news a {
+    text-decoration: underline;
+}
+
+/* ################ fin News ################ */
 
 /* Palette 
 Principale : #9C7300
