@@ -4,7 +4,6 @@ body {
     font-family: 'Recursive', sans-serif;
     color: #9C7300;
     margin: auto;
-    overflow-x: hidden;
 }
 
 a:visited {
@@ -19,11 +18,16 @@ a {
 p {
     margin: auto;
     font-size: 27px;
+    transition: opacity 1s ease;
 }
 
 /* ################ index ################ */
 
 /* ################ header ################ */
+
+body[class="index"] {
+    overflow: hidden;
+}
 
 header {
     display: flex;
@@ -101,8 +105,8 @@ h1, h2 {
 }
 
 nav .fas {
-    flex-basis: 100%;
     display: block;
+    font-size: 30px;
 }
 
 nav {
@@ -190,40 +194,59 @@ body.CV {
     height: 29.7cm;
     display: flex;
     margin: 0;
-    border: solid 1px #9C7300;
+    border: solid 1px #353535;
+    font-family: Roboto, sans-serif;
 }
 
 body.CV #mugshot {
     width: 200px;
     height: 200px;
+    border: solid 3px white;
 }
 
 body.CV p, body.CV ul {
     font-size: 16px;
-    text-align: justify;
+    font-family: Roboto;
+    text-align: left;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+body.CV ul {
+    list-style-type: '- ';
+    padding-left: 10px;
+}
+
+body.CV h1, body.CV h2, body.CV h3 {
+    font-family: Spartan, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+    
 }
 
 body.CV h2 {
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 5px;
+    color: #5271ff;
 }
 
 body.CV h1 {
     font-size: 30px;
+    color: #5271ff;
 }
 
 body.CV h3 {
     font-size: 20px;
     margin-bottom: 5px;
+    font-family: Spartan, sans-serif;
 }
 
-main.CV a {
+aside.CV a, main.CV a {
     text-decoration: underline;
 }
 
 main.CV h2 {
     font-size: 20px;
-    text-align: center;
 }
 
 main.CV h3 {
@@ -231,15 +254,49 @@ main.CV h3 {
 }
 
 aside.CV {
-    flex-basis: 40%;
-    background: #FFDC60;
+    flex-basis: 45%;
+    background: #353535;
     padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+aside.CV a {
+    color: white;
+}
+
+aside.CV p, aside.CV ul {
+    font-size: 16px;
 }
 
 main.CV {
     padding: 0 15px;
-    flex-basis: 60%;
+    flex-basis: 55%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #353535;
+}
+
+main.CV a {
+    color: #353535;
+}
+
+.main_CV_item {
     text-align: left;
+    width: 80%;
+}
+
+.aside_CV_item {
+    width: 95%;
+    margin-bottom: 30px;
+}
+
+.aside_CV_item ul{
+    list-style-type: none;
+    padding-left: 0;
 }
 
 #download_CV {

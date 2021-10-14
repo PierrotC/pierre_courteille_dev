@@ -1,0 +1,247 @@
+/* ############### Global ############### */
+
+.card_Battle {
+  height: 300px;
+  width: 400px;
+  border: solid 5px;
+  margin-bottom: 50px;
+}
+
+.card_Battle > div {
+  height: 100%;
+}
+
+/* ############### End global ############### */
+
+/* ############### Keyboard #80 ############### */
+
+#keyboard {
+  background: #998235;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  #kb {
+  background: #191919;
+  width: 174px;
+  height: 90px;
+  border-radius: 10px;
+  display:flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 5px 3px;
+  }
+  
+  .cr {
+    clip-path: polygon(0 0, 75% 0, 75% 50%, 100% 50%, 100% 100%, 0 100%);
+  }
+  
+    .cl {
+    clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%, 0 50%, 25% 50%);
+  }
+  
+  .cb {
+    clip-path: polygon(25% 0, 75% 0, 75% 50%, 100% 50%, 100% 100%, 0 100%, 0 50%, 25% 50%);
+  }
+  
+  .w {
+    height: 70px;
+    width: 20px;
+    background: #FFFFFF;
+    border-radius: 5px;
+  }
+
+/* ############### End Keyboard #80 ############### */
+
+/* ############### Odoo #81 ############### */
+
+  #odoo {
+  background: #191919;
+  }
+
+  #oooo {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:300px;
+    width:400px;
+    position: relative;
+    top: -60px;
+  }
+
+  #d {
+    position:relative;
+    left:44.8%;
+    top:30%;
+    border-radius:50px;
+    border-bottom-right-radius:0;
+    width:20px;
+    height:60px;
+    box-shadow: none;
+    background:#8F8F8F;
+  }
+
+  #oooo div {
+    width:40px;
+    height:40px;
+    background:#191919;
+    border-radius:50%;
+    margin: 0 21px;
+    box-shadow:0 0 0 20px #8F8F8F;
+  }
+
+/* ############### End Odoo #81 ############### */
+
+/* ############### Stairway #86 ############### */
+
+#stairway {
+  background: #191919;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#stairway > div {
+  background: #4F77FF;
+  width: 100px;
+  height: 150px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+#stairway div div {
+  height: 20px;
+  background: #191919;
+  margin-top: 4px;
+}
+
+/* ############### End Stairway #86 ############### */
+
+/* ############### Push Button #3 ############### */
+
+#pushButton {
+  background:#6592CF;
+  display:flex;
+  padding:0px 37px;
+  align-items:center;
+  justify-content:space-around;
+}
+
+#pushButton div {
+  background:#243D83;
+  height:150px;
+  width:50px;
+}
+
+#pushButton div:nth-child(2) {
+  width:150px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  box-shadow:0 0 0 50px #6592CF;
+  z-index:1;
+}
+
+#pushButton div div {
+  background:#EEB850;
+  height:50px;
+  border-radius:50%;
+}
+
+/* ############### End Push Button #3 ############### */
+
+/* ############### Forking Crazy #8 ############### */
+
+#forking {
+  background: #6592CF;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+}
+
+#forking #box {
+  display: flex;
+  width: 140px;
+  height: 110px;
+  position: absolute;
+  top: 48px;
+  z-index: 1;
+}
+
+#forking div {
+  width: 100%;
+}
+
+#forking #box .f {
+  background: #060F55;
+  border-radius: 50px;
+}
+
+#forking #box .c {
+  border-radius: 50px;
+  background: #6592CF;
+}
+
+#forking .handle {
+  background: #060F55;
+  order: 2;
+  height: 60px;
+  width: 20px;
+  border-radius: 0;
+}
+
+#forking .big {
+  order: 1;
+  height: 98px;
+  width: 140px;
+  background: #060F55;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  position: absolute;
+  bottom: 58px;
+}
+
+/* ############### End Forking Crazy #8 ############### */
+
+/* 
+
+############### Junction #84 ###############
+
+<div><i>
+
+<style>
+  body {
+    background: #191919;
+    margin: 0;
+    position: relative;
+  }
+  
+  div {
+	background: #FE5F55;
+    left: 180;
+    top: -50;
+    width:40;
+    height:180;
+    position: absolute;
+    border-radius: 50px;
+    box-shadow: 0 220px #FE5F55;
+  }
+  
+  i {
+    background: #A64942;
+    width: 200;
+    height: 40;
+    position: absolute;
+    top: 180px;
+    left: 40;
+    border-radius: 50px;
+    box-shadow: -240px 0 #A64942;
+  } */
