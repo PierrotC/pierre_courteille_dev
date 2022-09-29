@@ -6,6 +6,7 @@ body {
     flex-wrap: wrap;
     cursor: url(./images/rsz_duck.png), wait;
     /* cursor: wait; */
+    height: 100vh;
 }
 
 header {
