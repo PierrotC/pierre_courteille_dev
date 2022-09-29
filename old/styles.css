@@ -1,0 +1,394 @@
+body {
+    height: 100%;
+    text-align: center;
+    font-family: 'Recursive', sans-serif;
+    color: #9C7300;
+    margin: auto;
+}
+
+a:visited {
+    color: #9C7300;
+}
+
+a {
+    color: #9C7300;
+    text-decoration: none;
+}
+
+p {
+    margin: auto;
+    font-size: 27px;
+    transition: opacity 1s ease;
+}
+
+/* ################ index ################ */
+
+/* ################ header ################ */
+
+body[class="index"] {
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+header p {
+    flex-basis: 100%;
+}
+
+#mugshot {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: solid 3px #9C7300;
+    margin: 10px;
+}
+
+h1, h2 {
+    font-size: 35px;
+    flex-basis: 30%;
+}
+
+.logo {
+    width: 20px;
+}
+
+#banner {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: -5%;
+    width: 110%;
+    height: 250px;
+    z-index: 1;
+}
+
+.banner_part_up {
+    border-top: solid 50px #FFDC60;  
+    height: 250px;
+    border-radius: 50%;
+    flex-basis: 35%;
+}
+
+.banner_part_down {
+    border-bottom: solid 15px #FFDC60;
+    height: 250px;
+    border-radius: 50%;
+    flex-basis: 35%;
+
+}
+
+/* ################ fin header ################ */
+
+/* ################ nav ################ */
+
+.nav_card {
+    max-width: 350px;
+    min-width: 175px;
+    min-height: 175px;
+    border: solid 2px #9C7300;
+    margin: 10px 10px;
+    background: #FFDC60;
+    border-radius: 50px;
+    flex-basis: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .fas {
+    display: block;
+    font-size: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    flex-wrap: wrap;
+}
+
+.on_hover {
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    transition: opacity 1s ease;
+    font-size: 15px;
+    width: 18%;
+}
+
+.nav_card:hover p:first-child{
+    opacity: 0;
+}
+
+.nav_card:hover .on_hover {
+    opacity: 1;
+}
+
+/* ################ fin nav ################ */
+
+/* ################ fin index ################ */
+
+/* ################ global pages ################ */
+
+header.pages {
+    flex-direction: column;
+    font-size: 15px;
+}
+
+body.pages {
+    height: auto;
+}
+
+nav.pages {
+    position: fixed;
+    right: 10px;
+    display: flex;
+    text-align: right;
+    font-size: 25px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article div {
+    width: 85%;
+    background: #FFDC60;
+    border: solid 2px #9C7300;
+    text-align: center;
+    border-radius: 50px;
+    margin: 10px 0;
+    padding: 15px;
+}
+
+article div p {
+    font-size: 20px;
+}
+
+nav.pages p {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+nav.pages:hover p {
+    opacity: 1;
+}
+
+/* ################ fin global pages ################ */
+
+/* ################ CV ################ */
+
+body.CV {
+    width: 21cm;
+    height: 29.7cm;
+    display: flex;
+    margin: 0;
+    border: solid 1px #353535;
+    font-family: Roboto, sans-serif;
+}
+
+body.CV #mugshot {
+    width: 200px;
+    height: 200px;
+    border: solid 3px white;
+}
+
+body.CV p, body.CV ul {
+    font-size: 16px;
+    font-family: Roboto;
+    text-align: left;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+body.CV ul {
+    list-style-type: '- ';
+    padding-left: 10px;
+}
+
+body.CV h1, body.CV h2, body.CV h3 {
+    font-family: Spartan, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+    
+}
+
+body.CV h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #5271ff;
+}
+
+body.CV h1 {
+    font-size: 30px;
+    color: #5271ff;
+}
+
+body.CV h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-family: Spartan, sans-serif;
+}
+
+aside.CV a, main.CV a {
+    text-decoration: underline;
+}
+
+main.CV h2 {
+    font-size: 20px;
+}
+
+main.CV h3 {
+    font-size: 18px;
+}
+
+aside.CV {
+    flex-basis: 45%;
+    background: #353535;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+aside.CV a {
+    color: white;
+}
+
+aside.CV p, aside.CV ul {
+    font-size: 16px;
+}
+
+main.CV {
+    padding: 0 15px;
+    flex-basis: 55%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #353535;
+}
+
+main.CV a {
+    color: #353535;
+}
+
+.main_CV_item {
+    text-align: left;
+    width: 80%;
+}
+
+.aside_CV_item {
+    width: 95%;
+    margin-bottom: 30px;
+}
+
+.aside_CV_item ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#download_CV {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 25px;
+    background: #FFDC60;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: width 1s ease, border-radius 1s ease;
+    text-decoration: none;
+}
+
+#download_CV:hover > i{
+    opacity: 0;
+}
+
+#dowload_CV > i {
+    transition: opacity 1s ease;
+}
+
+#download_CV:hover {
+    width: 220px;
+    border-radius: 15px;
+}
+
+#download_CV:hover .on_hover {
+    opacity: 1;
+}
+
+#download_CV .on_hover {
+    width: 220px;
+    padding-left: 5px;
+}
+
+.empty_circle {
+    color: white;
+}
+
+/* ################ fin CV ################ */
+
+/* ################ News ################ */
+
+main.news p {
+    background: #FFDC60;
+    border: solid 1px #9C7300;
+    text-align: left;
+    border-radius: 50px;
+    margin: 10px 0;
+    padding: 15px;
+    display: block;
+    width: max-content;
+    font-size: 1em;
+}
+
+main.news h2 {
+    font-size: 1.6em;
+    border-bottom: solid 2px #FFDC60;
+}
+
+main.news h3 {
+    font-size: 1.4em;
+    border-bottom: solid 1px lightgray;
+}
+
+main.news h4 {
+    font-size: 1.2em;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+main.news {
+    margin: 10px;
+}
+
+main.news a {
+    text-decoration: underline;
+}
+
+/* ################ fin News ################ */
+
+/* Palette 
+Principale : #9C7300
+
+Tertiaire (claire) : #FFDC60
+
+Secondaire (sombre) : 9C7300
+Complémentaire : 040B89
+Complémentaire sombre : 02076C */
