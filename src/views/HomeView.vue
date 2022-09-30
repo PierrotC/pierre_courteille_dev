@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-    <h1>Pierre Courteille</h1>
+  <div class="home-view flex-center">
+    <h1>En cours de construction !</h1>
   </div>
 </template>
 
@@ -13,3 +13,9 @@ export default {
   components: {},
 };
 </script>
+
+<style scoped>
+  h1 {
+    margin-top: 250px;
+  }
+</style>
