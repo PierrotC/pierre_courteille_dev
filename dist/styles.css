@@ -1,0 +1,50 @@
+body {
+    font-family: 'Recursive', sans-serif;
+    margin: 0 50px;
+    background-color: black;
+    color: white;
+    cursor: url(rsz_duck.png), auto;
+}
+
+.header {
+    display: grid;
+    grid-template: 25% 25% 50% /1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+nav {
+    border-bottom: 3px white solid;
+    flex-wrap: wrap;
+    grid-column: span 2;
+    width: 100%;
+}
+
+#mugshot {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: solid 3px white;
+    margin: 10px;
+    grid-row: span 2;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a:visited, a {
+    color: white;
+    margin: 15px;
+    padding: 10px;
+    border: solid 1px black;
+    transition: 300ms;
+}
+
+a:hover {
+    border: solid 1px white;
+    border-radius: 50px;
+    transition: 500ms;
+}
