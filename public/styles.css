@@ -3,7 +3,7 @@ body {
     margin: 0 50px;
     background-color: black;
     color: white;
-    cursor: url(rsz_duck.png), auto;
+    cursor: url(duke_pointer.png), auto;
 }
 
 .header {
@@ -47,4 +47,5 @@ a:hover {
     border: solid 1px white;
     border-radius: 50px;
     transition: 500ms;
+    cursor: url(duke_pointer_talky.png), auto;
 }

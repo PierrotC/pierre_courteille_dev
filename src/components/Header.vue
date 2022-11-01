@@ -8,8 +8,6 @@
             <a href="https://github.com/PierrotC">Mon profil Github</a>
             <a href="CV_Pierre_Courteille_Developpeur_web.pdf" download>Téléchargez mon CV</a>
             <a href="mailto:pierre-courteille@outlook.fr">Ecrivez-moi</a>
-            <!-- <link rel="icon" href="<%= BASE_URL %>its_me.pdf"> -->
-            <a href="https://www.flaticon.com/free-icons/duck" title="duck icons">Credit curseur</a>
         </nav>
     </div>
 </template>
